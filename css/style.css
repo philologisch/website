@@ -12,6 +12,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0px;
+	z-index: 5;
 }
 
 .barContainer {
@@ -107,23 +108,46 @@ nav a:hover {
 }
 
 /* main */
+
 main {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
     margin-top: 12vh;
     max-width: 1200;
     padding: 0 5%;
+	z-index: 2;
 }
 
 /* slideshow */
 
 .slideshow-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+	max-width: 950px;
+	max-height: 400px;
+	background-color: #444;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 
-.slideshow-container img {
-    max-width: 100%;
+.slideimage {
+    width: 100%;
     height: auto;
+}
+
+.slideshow-container input{
+	width: 50px;
+	height: auto;
+	position: absolute;
+}
+
+input.next {
+	right: 10%;
+}
+
+input.prev {
+	left: 10%;
 }
 
 /* articles */
