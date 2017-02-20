@@ -19,23 +19,22 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 8vh;
+    height: 56px;
     width: 100%;
-    flex: 5;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    margin-left: 1em;
     font-family: sans-serif;
-    font-size: 1em;
     color: white;
-    letter-spacing: 0.1em;
+    letter-spacing: 1px;
+	padding-left: 15px;
 }
 
 .logoText{
-    font-size: 2.5em;
+    font-size: 25px;
+	line-height: 27px;
 }
 
 .logoImg {
@@ -46,11 +45,10 @@ header {
 }
 
 #menuButton {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    height: 30px;
+	width: auto;
     transition: 0.6s ease;
+	padding: 13px;
 }
 
 #menuButton:hover {
@@ -70,19 +68,20 @@ nav {
     display: flex;
     flex-direction: column;
     background-color: #333;
-    flex: 1;
     height: 100vh;
     box-shadow: -5px 0px 10px black;
+	width: 150px;
 }
 
 nav h1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
     margin: 0;
     font-family: sans-serif;
-    font-size: 2.5em;
-    height: 8vh;
+    font-size: 20px;
+	line-height: 25px;
+	height: 56px;
     color: white;
 }
 
@@ -96,7 +95,7 @@ nav a {
     border-left: 5px solid grey;
 
     font-family: sans-serif;
-    font-size: 2em;
+    font-size: 18px;
     line-height: 2;
     text-decoration: none;
     color: white;
@@ -105,23 +104,6 @@ nav a {
 nav a:hover {
     border-left: 5px solid rgba(0,255,200,0.7);
     background-color: #555;
-}
-
-@media (max-device-width: 800px) {
-    nav {
-        flex: 10;
-        align-items: center;
-        justify-content: space-around;
-    }
-    nav a{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        line-height: 1;
-        height: 20%;
-        border-bottom: 5px solid grey;
-        font-size: 3em;
-    }
 }
 
 /* main */
