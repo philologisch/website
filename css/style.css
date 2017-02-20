@@ -123,8 +123,7 @@ main {
 /* slideshow */
 
 .slideshow-container {
-	max-width: 950px;
-	max-height: 400px;
+
 	background-color: #444;
 	display: flex;
 	align-items: center;
@@ -132,22 +131,31 @@ main {
 }
 
 .slideimage {
-    width: 100%;
-    height: auto;
+    height: auto; 
+    width: auto; 
+    max-width: 800px; 
+    max-height: 400px;
+}
+
+@media (max-device-width: 700px){
+	.slideimage {
+		max-width: 300px;
+		max-height: 300px;
+	}
 }
 
 .slideshow-container input{
-	width: 50px;
+	width: 40px;
 	height: auto;
 	position: absolute;
 }
 
 input.next {
-	right: 10%;
+	right: 15%;
 }
 
 input.prev {
-	left: 10%;
+	left: 15%;
 }
 
 /* articles */

@@ -3,7 +3,7 @@ var next = document.getElementsByClassName('next')[0];
 var i = 0;
 
 var slideImage = document.getElementsByClassName('slideimage')[0];
-var imageList = ['img/slide1.png', 'img/slide2.png', 'img/slide3.png'];
+var imageList = ['img/slide1.jpg', 'img/slide2.jpg', 'img/slide3.jpg'];
 
 next.onclick = function () {
 	i++;
