@@ -9,10 +9,14 @@ body{
 /* header */
 header {
     display: flex;
+	align-items: center;
+    justify-content: space-between;
     position: fixed;
     width: 100%;
     top: 0px;
 	z-index: 5;
+	background-color: #333;
+	height: 56px;
 }
 
 .barContainer {
@@ -20,11 +24,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 56px;
     width: 100%;
 }
 
-.logo {
+.logoContainer {
     display: flex;
     align-items: center;
     font-family: sans-serif;
@@ -45,7 +48,7 @@ header {
     margin-right: 10px;
 }
 
-#menuButton {
+/*#menuButton {
     height: 30px;
 	width: auto;
     transition: 0.6s ease;
@@ -58,16 +61,42 @@ header {
 
 #menuButton:focus {
     outline: none;
+}*/
+
+.navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.navigation a{
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+	color: white;
+	text-decoration: none;
+	margin-right: 10px;
+	width: 80px;
+	border-bottom: 5px solid #555;
+	transition: 0.5s;
+}
+
+.navigation a:hover{
+	background-color: grey;
 }
 
 /* slide Menu */
+
+
+
+/*
 .inactive {
     display: none;
 }
 
 nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: #333;
     height: 100vh;
     box-shadow: -5px 0px 10px black;
@@ -106,7 +135,7 @@ nav a:hover {
     border-left: 5px solid rgba(0,255,200,0.7);
     background-color: #555;
 }
-
+*/
 /* main */
 
 main {
